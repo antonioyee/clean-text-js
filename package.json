@@ -5,6 +5,7 @@
   "scripts": {
     "commit": "git-cz",
     "test": "mocha test/index.js -w",
+    "test:single": "mocha test/index.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "build": "NODE_ENV=production webpack -p --config webpack.config.js"
   },
