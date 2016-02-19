@@ -1,0 +1,37 @@
+{
+  "name": "clean-text-js",
+  "version": "1.1.0",
+  "description": "remove js code strings",
+  "scripts": {
+    "commit": "git-cz",
+    "test": "mocha test/index.js -w",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post",
+    "build": "NODE_ENV=production webpack -p --config webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/antonioyee/clean-text-js.git"
+  },
+  "author": "Antonio Yee",
+  "license": "MIT",
+  "homepage": "http://antonioyee.mx/",
+  "bugs": {
+    "url": "https://github.com/antonioyee/clean-text-js/issues"
+  },
+  "main": "src/index.js",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "commitizen": "2.5.0",
+    "cz-conventional-changelog": "1.1.5",
+    "mocha": "2.4.5",
+    "semantic-release": "^4.3.5"
+  },
+  "dependencies": {
+    "webpack": "1.12.13"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
