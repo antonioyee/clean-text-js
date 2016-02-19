@@ -28,6 +28,7 @@ var CleanText = (function () {
 	};
 
 	changeText = function (text) {
+		
 		characters.map(function (character) {
 			text = text.replace(new RegExp(character, 'g'), '');
 		});
