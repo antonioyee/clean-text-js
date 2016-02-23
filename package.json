@@ -5,7 +5,7 @@
   "scripts": {
     "commit": "git-cz",
     "test": "mocha test/index.js -w",
-    "test:single": "mocha test/index.js",
+    "test:single": "istanbul cover -x *.test.js _mocha -- -R spec test/index.js",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "build": "NODE_ENV=production webpack -p --config webpack.config.js"
   },
@@ -25,6 +25,7 @@
     "commitizen": "2.5.0",
     "cz-conventional-changelog": "1.1.5",
     "ghooks": "1.0.3",
+    "istanbul": "0.4.2",
     "mocha": "2.4.5",
     "semantic-release": "^4.3.5"
   },
