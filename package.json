@@ -1,6 +1,6 @@
 {
   "name": "clean-text-js",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "remove js code strings",
   "scripts": {
     "commit": "git-cz",
