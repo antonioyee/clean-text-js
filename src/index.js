@@ -13,22 +13,20 @@ var CleanText = (function () {
 		if ( typeof text === 'string' ) {
 			return true;
 		}
-
-		var exception = new Exception('the value is not defined as a string');
-		throw exception;
+		
+		throw new Exception('the value is not defined as a string');
 	};
 
 	isUndefined = function (text) {
 		if ( typeof text === 'undefined' ) {
-			var exception = new Exception('value is not defined');
-			throw exception;
+			throw new Exception('value is not defined');
 		}
 
 		return true;
 	};
 
 	changeText = function (text) {
-		
+
 		characters.map(function (character) {
 			text = text.replace(new RegExp(character, 'g'), '');
 		});
