@@ -1,6 +1,7 @@
 # clean-text-js
 
 [![travis build](https://travis-ci.org/antonioyee/clean-text-js.svg?branch=master)](https://travis-ci.org/antonioyee/clean-text-js)
+[![codecov.io](https://codecov.io/github/antonioyee/clean-text-js/coverage.svg?branch=master)](https://codecov.io/github/antonioyee/clean-text-js?branch=master)
 
 
 ## Installation

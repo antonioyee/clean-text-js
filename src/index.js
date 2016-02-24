@@ -10,7 +10,6 @@ var CleanText = (function () {
 	};
 
 	isString = function (text) {
-		
 		if ( typeof text === 'string' ) {
 			return true;
 		}
