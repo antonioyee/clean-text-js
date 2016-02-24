@@ -10,10 +10,11 @@ var CleanText = (function () {
 	};
 
 	isString = function (text) {
+		
 		if ( typeof text === 'string' ) {
 			return true;
 		}
-		
+
 		throw new Exception('the value is not defined as a string');
 	};
 
